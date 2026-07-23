@@ -32,3 +32,8 @@ This project was modernised in a single session covering all tasks (XLIFF, decla
 **Recommendation:** For future single-session migrations of this scope, Sonnet 5 remains the right default. If splitting into individual sessions, the mechanical subtasks (declarations, method visibility, menu) could use Haiku 4.5.
 
 ## Screenshots
+
+<img width="360" height="352" alt="Screenshot 2026-07-23 at 13 20 14" src="https://github.com/user-attachments/assets/28e6f8d9-8825-434a-99f4-fafe42276b65" />
+<img width="720" height="572" alt="Screenshot 2026-07-23 at 13 20 17" src="https://github.com/user-attachments/assets/40a51a5f-97c4-4fb0-8fd6-25941a7ab0be" />
+<img width="720" height="572" alt="Screenshot 2026-07-23 at 13 20 28" src="https://github.com/user-attachments/assets/71a436f4-0129-4348-944a-b2d732eb01e4" />
+
