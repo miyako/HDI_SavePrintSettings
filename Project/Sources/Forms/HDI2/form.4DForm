@@ -1,0 +1,202 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 720,
+	"windowMinHeight": 540,
+	"width": 760,
+	"height": 560,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 20,
+					"width": 720,
+					"height": 480,
+					"fill": "#E6E6E6",
+					"stroke": "#CCCCCC",
+					"borderRadius": 5
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 43,
+					"left": 26,
+					"width": 400,
+					"height": 400,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture3.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 210,
+					"left": 540,
+					"width": 180,
+					"height": 22,
+					"text": ":xliff:Print Settings",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 270,
+					"left": 540,
+					"width": 180,
+					"height": 22,
+					"text": ":xliff:Save Print Settings",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 330,
+					"left": 540,
+					"width": 180,
+					"height": 22,
+					"text": ":xliff:Change Print Settings",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 390,
+					"left": 540,
+					"width": 180,
+					"height": 22,
+					"text": ":xliff:Reload Print Settings",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 452,
+					"left": 540,
+					"width": 180,
+					"height": 22,
+					"text": ":xliff:Verify Print Settings",
+					"focusable": false,
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button7": {
+					"type": "button",
+					"top": 520,
+					"left": 550,
+					"width": 110,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":xliff:Cancel",
+					"class": "Buttons_13",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button8": {
+					"type": "button",
+					"top": 520,
+					"left": 670,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":xliff:OK",
+					"class": "Buttons_13",
+					"focusable": false,
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 204,
+					"left": 78,
+					"width": 407,
+					"height": 43,
+					"text": ":xliff:#1: First call the print settings"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 264,
+					"left": 78,
+					"width": 407,
+					"height": 43,
+					"text": ":xliff:#2: Save those settings. All the options you have modified shall be memorized and saved in a BLOB."
+				},
+				"Text4": {
+					"type": "text",
+					"top": 324,
+					"left": 78,
+					"width": 407,
+					"height": 43,
+					"text": ":xliff:#3: Modify the print settings again"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 384,
+					"left": 78,
+					"width": 407,
+					"height": 43,
+					"text": ":xliff:#4: Reload the saved settings from the BLOB saved in step #2."
+				},
+				"Text6": {
+					"type": "text",
+					"top": 446,
+					"left": 78,
+					"width": 407,
+					"height": 43,
+					"text": ":xliff:#5: Call the settings again and verify they are the same as set in step #1 and saved in step #2."
+				},
+				"Text1": {
+					"type": "text",
+					"top": 36,
+					"left": 80,
+					"width": 640,
+					"height": 128,
+					"class": "HDI",
+					"textAlign": "center",
+					"text": ":xliff:Two new commands"
+				}
+			}
+		}
+	]
+}

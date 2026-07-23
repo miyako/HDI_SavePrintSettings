@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v16" source-language="en-US" target-language="ja">
+    <header>
+      <note/>
+    </header>
+    <body>
+      <group resname="HDI">
+        <!-- common stuff -->
+        <trans-unit resname="Quit 4D">
+          <source>Quit 4D</source>
+          <target>終了する</target>
+        </trans-unit>
+        <trans-unit resname="Demo">
+          <source>Demo</source>
+          <target>スタート</target>
+        </trans-unit>
+        <trans-unit resname="(4D v16 and above...)">
+          <source>(4D v16 and above...)</source>
+          <target>(4D v16 以降...)</target>
+        </trans-unit>
+        <trans-unit resname="How Do I...">
+          <source>How Do I...</source>
+          <target>教えて...</target>
+        </trans-unit>
+        <trans-unit resname="Demo...">
+          <source>Demo...</source>
+          <target>デモンストレーション...</target>
+        </trans-unit>
+        <trans-unit resname="The plugin xxx is mandatory">
+          <source>The plugin xxx is mandatory</source>
+          <target>プラグインxxxが必要です。</target>
+        </trans-unit>
+        <trans-unit resname="Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.">
+          <source>Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+          <target>このHDIをデザインモードで開いてはなりません。開いてしまった場合，フォームやメソッドが不完全になってしまう恐れがあります。</target>
+        </trans-unit>
+        <trans-unit resname="Sorry">
+          <source>Sorry, this &quot;How do I...&quot; (HDI) &#x0D;example must be used with&#x0D;a newer version of 4D&#x0D;(v16 and above).</source>
+          <target>申し訳ありません。この&quot;How do I...&quot; (HDI) &#x0D;サンプルは，より新しいバージョンの4D（v16以降）で開かなければなりません。</target>
+        </trans-unit>
+        <!-- specific stuff -->
+        <trans-unit resname="... save print settings?">
+          <source>... save print settings?</source>
+          <target>...印刷設定を保存するには?</target>
+        </trans-unit>
+        <trans-unit resname="OK">
+          <source>OK</source>
+          <target>OK</target>
+        </trans-unit>
+        <trans-unit resname="Cancel">
+          <source>Cancel</source>
+          <target>キャンセル</target>
+        </trans-unit>
+        <trans-unit resname="Print Settings">
+          <source>Print Settings</source>
+          <target>印刷設定</target>
+        </trans-unit>
+        <trans-unit resname="Save Print Settings">
+          <source>Save Print Settings</source>
+          <target>印刷設定を保存</target>
+        </trans-unit>
+        <trans-unit resname="Change Print Settings">
+          <source>Change Print Settings</source>
+          <target>印刷設定を書き換え</target>
+        </trans-unit>
+        <trans-unit resname="Reload Print Settings">
+          <source>Reload Print Settings</source>
+          <target>印刷設定を読み込み</target>
+        </trans-unit>
+        <trans-unit resname="Verify Print Settings">
+          <source>Verify Print Settings</source>
+          <target>印刷設定（再表示）</target>
+        </trans-unit>
+        <trans-unit resname="The settings are damaged">
+          <source>The settings are damaged</source>
+          <target>不正な印刷設定です。</target>
+        </trans-unit>
+        <trans-unit resname="There is no current printer!">
+          <source>There is no current printer!</source>
+          <target>印刷設定が登録されていません！</target>
+        </trans-unit>
+        <trans-unit resname="Printer has been changed">
+          <source>設定時とは違うプリンターです！&#x0D;&#x0D;印刷設定をやり直してください。</source>
+          <target>カレントプリンターが設定されていません！</target>
+        </trans-unit>
+        <trans-unit resname="Print settings have been reloaded!">
+          <source>Print settings have been reloaded!</source>
+          <target>印刷設定が読み込まれました！</target>
+        </trans-unit>
+        <trans-unit resname="Print settings have been saved!">
+          <source>Print settings have been saved!</source>
+          <target>印刷設定が登録されました！</target>
+        </trans-unit>
+        <trans-unit resname="#5: Call the settings again and verify they are the same as set in step #1 and saved in step #2.">
+          <source>#5: Call the settings again and verify they are the same as set in step #1 and saved in step #2.</source>
+          <target>#5: 印刷設定ダイアログを再表示して，ステップ #1で設定してステップ #2で保存したものと同じであることを確認してください。</target>
+        </trans-unit>
+        <trans-unit resname="#4: Reload the saved settings from the BLOB saved in step #2.">
+          <source>#4: Reload the saved settings from the BLOB saved in step #2.</source>
+          <target>#4: ステップ #2で保存したBLOBから印刷設定を再現します。</target>
+        </trans-unit>
+        <trans-unit resname="#3: Modify the print settings again">
+          <source>#3: Modify the print settings again&#x0D;(e.g. : back to Portrait, scale 100% and &quot;Legal US&quot;format...)</source>
+          <target>#3: 印刷設定を書き換えます。（用紙サイズ・方向・拡大縮小など...)</target>
+        </trans-unit>
+        <trans-unit resname="#2: Save those settings. All the options you have modified shall be memorized and saved in a BLOB.">
+          <source>#2: Save those settings. All the options you have modified shall be memorized and saved in a BLOB.</source>
+          <target>#2: 印刷設定をレコードに登録します。ダイアログで書き換えた内容はすべてBLOBに保存されます。</target>
+        </trans-unit>
+        <trans-unit resname="#1: First call the print settings">
+          <source>#1: First call the print settings and modify some of them.&#x0D;(e.g. : Landscape, scale 80%, &quot;A5&quot; paper format...)</source>
+          <target>#1: ダイアログを表示し，印刷設定を書き換えます。（用紙サイズ・方向・拡大縮小など...)</target>
+        </trans-unit>
+        <trans-unit resname="Two new commands">
+          <source>Two new commands from the 4D Pack Plugin have been improved and integrated into 4D : &quot;Print settings to BLOB&quot; and &quot;BLOB to print settings&quot;.&#x0D;These commands allow you to memorize and reload a user&apos;s print settings, even those that cannot be set using 4D &quot;Get print option&quot; and &quot;SET PRINT OPTION&quot; commands.</source>
+          <target>4D Packプラグインのコマンドがパワーアップして標準コマンドになりました。&#x0D;&quot;Print settings to BLOB&quot;と&quot;BLOB to print settings&quot;です。&#x0D;これらのコマンドを使用すれば，印刷設定を保存し，後で再利用することができます。&#x0D;&quot;Get print option&quot;および&quot;SET PRINT OPTION&quot;コマンドで&#x0D;読み書きできない項目も管理することができます。</target>
+        </trans-unit>
+
+
+      </group>
+    </body>
+  </file>
+</xliff>

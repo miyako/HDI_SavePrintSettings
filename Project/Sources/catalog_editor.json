@@ -1,0 +1,19 @@
+{
+	"tables": {
+		"PARAMETERS": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "0",
+				"top": "0",
+				"width": "210.125",
+				"height": "286.92578125"
+			},
+			"displayable_fields_count": 11
+		}
+	}
+}

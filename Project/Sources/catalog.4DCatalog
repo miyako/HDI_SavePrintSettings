@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_SavePrintSettings" uuid="89D3E6F80FA9EA408A0E251A8569EC50" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="PARAMETERS" uuid="373049FBC27B4679BB600FC556A05850" id="3">
+		<field name="ID" uuid="A6E58BB01FF1407482262079B5A1922D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="PrintSettingsMAC" uuid="35C07DCBFEBB4747A3C229B95F85D5EE" type="18" never_null="true" id="2"/>
+		<field name="PrintSettingsWIN" uuid="4C4CE189E738499B84F53F34B61CF199" type="18" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="A6E58BB01FF1407482262079B5A1922D"/>
+		<table_extra input_form="Input" output_form="Output"/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="9F0A7D5AE4AC4E49B1DB241459A71A43" type="7">
+		<field_ref uuid="A6E58BB01FF1407482262079B5A1922D" name="ID">
+			<table_ref uuid="373049FBC27B4679BB600FC556A05850" name="PARAMETERS"/>
+		</field_ref>
+	</index>
+	<base_extra data_file_path=":SavePrintSettings.4DD" package_name="HDI_SavePrintSettings 2" structure_file_name="SavePrintSettings">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>
