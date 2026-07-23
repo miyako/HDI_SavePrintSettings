@@ -33,7 +33,5 @@ This project was modernised in a single session covering all tasks (XLIFF, decla
 
 ## Screenshots
 
-<img width="360" height="352" alt="Screenshot 2026-07-23 at 13 20 14" src="https://github.com/user-attachments/assets/28e6f8d9-8825-434a-99f4-fafe42276b65" />
-<img width="720" height="572" alt="Screenshot 2026-07-23 at 13 20 17" src="https://github.com/user-attachments/assets/40a51a5f-97c4-4fb0-8fd6-25941a7ab0be" />
-<img width="720" height="572" alt="Screenshot 2026-07-23 at 13 20 28" src="https://github.com/user-attachments/assets/71a436f4-0129-4348-944a-b2d732eb01e4" />
-
+<img width="360" height="352" alt="Screenshot 2026-07-23 at 16 10 24" src="https://github.com/user-attachments/assets/bf9f8b89-02eb-4b30-9900-b7af1bf7c60a" />
+<img width="760" height="592" alt="Screenshot 2026-07-23 at 16 11 15" src="https://github.com/user-attachments/assets/071b2ba5-b103-497e-83c4-8b911bb52686" />
