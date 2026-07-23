@@ -1,6 +1,6 @@
-C_BLOB:C604($printSettings)
-C_LONGINT:C283($platform; $error)
-C_POINTER:C301($Main)
+var $printSettings : Blob
+var $platform; $error : Integer
+var $Main : Pointer
 
 _O_PLATFORM PROPERTIES:C365($platform)
 

@@ -1,0 +1,23 @@
+/* cross-platform: dark mode support */
+
+@media (prefers-color-scheme: light) {
+	.panel {
+		fill: #E6E6E6;
+		stroke: #CCCCCC;
+	}
+
+	.alert-text {
+		stroke: #FF4D00;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.panel {
+		fill: #2A2A2A;
+		stroke: #4A4A4A;
+	}
+
+	.alert-text {
+		stroke: #FF8A50;
+	}
+}

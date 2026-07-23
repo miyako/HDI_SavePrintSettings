@@ -1,7 +1,6 @@
-C_BLOB:C604($printSettings)
-C_LONGINT:C283($err)
-C_LONGINT:C283($platform)
-C_POINTER:C301($Main; $Sub)
+var $printSettings : Blob
+var $err; $platform : Integer
+var $Main; $Sub : Pointer
 
 $err:=Print settings to BLOB:C1433($printSettings)
 

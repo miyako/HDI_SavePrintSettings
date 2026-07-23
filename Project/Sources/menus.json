@@ -33,10 +33,9 @@
 				},
 				{
 					"title": ":xliff:CommonMenuItemQuit",
-					"method": "m_Quit",
+					"action": "quit",
 					"shortcutAccel": true,
-					"shortcutKey": "Q",
-					"action": "quit"
+					"shortcutKey": "Q"
 				}
 			]
 		},
