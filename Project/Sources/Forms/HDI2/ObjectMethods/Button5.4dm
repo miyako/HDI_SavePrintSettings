@@ -1,18 +1,12 @@
 var $printSettings : Blob
-var $platform; $error : Integer
+var $error : Integer
 var $Main : Pointer
 
-_O_PLATFORM PROPERTIES:C365($platform)
-
-Case of 
-		
-	: ($platform=Mac OS:K25:2)
-		$Main:=->[PARAMETERS:3]PrintSettingsMAC:2
-		
-	: ($platform=Windows:K25:3)
-		$Main:=->[PARAMETERS:3]PrintSettingsWIN:3
-		
-End case 
+If (Is macOS)
+	$Main:=->[PARAMETERS:3]PrintSettingsMAC:2
+Else 
+	$Main:=->[PARAMETERS:3]PrintSettingsWIN:3
+End if 
 
 $printSettings:=$Main->
 
