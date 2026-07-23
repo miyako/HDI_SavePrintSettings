@@ -12,6 +12,23 @@ This project started as a binary `.4DB` example database originally distributed 
 
 ## Branches
 
+Each branch represents a distinct modernisation effort, guided by a corresponding Copilot instruction file.
+
+| Branch | Description | Instructions |
+|--------|-------------|--------------|
+| [`miyako-hdi-migration-tasks`](../../tree/miyako-hdi-migration-tasks) | Full HDI modernisation (XLIFF, declarations, menu, method visibility, startup, dark mode CSS) | [localisation.instructions.md](.github/copilot/instructions/localisation.instructions.md), [variable.declarations.instructions.md](.github/copilot/instructions/variable.declarations.instructions.md), [menu.instructions.md](.github/copilot/instructions/menu.instructions.md), [method.visibility.instructions.md](.github/copilot/instructions/method.visibility.instructions.md), [startup.instructions.md](.github/copilot/instructions/startup.instructions.md), [css.instructions.md](.github/copilot/instructions/css.instructions.md), [tahoe.css.instructions.md](.github/copilot/instructions/tahoe.css.instructions.md) |
+
 ## Copilot Token Usage
+
+| Session | Branch | Model(s) | Input Tokens | Output Tokens | Turns |
+|---------|--------|----------|-------------:|--------------:|------:|
+| HDI print settings migration | `miyako-hdi-migration-tasks` | Claude Sonnet 5 | 9,853,886 | 59,523 | 69 |
+| **Total** | | | **9,853,886** | **59,523** | **69** |
+
+## Model Selection Assessment
+
+This project was modernised in a single session covering all tasks (XLIFF, declarations, menu, method visibility, startup, dark mode CSS). Claude Sonnet 5 was used throughout. Given the breadth of work -- multiple instruction files applied sequentially in one session -- Sonnet 5 was an appropriate choice. The combined task involved moderate complexity with clear instruction files guiding each step.
+
+**Recommendation:** For future single-session migrations of this scope, Sonnet 5 remains the right default. If splitting into individual sessions, the mechanical subtasks (declarations, method visibility, menu) could use Haiku 4.5.
 
 ## Screenshots
