@@ -1,18 +1,12 @@
-C_BLOB:C604($printSettings)
-C_LONGINT:C283($platform; $error)
-C_POINTER:C301($Main)
+var $printSettings : Blob
+var $error : Integer
+var $Main : Pointer
 
-_O_PLATFORM PROPERTIES:C365($platform)
-
-Case of 
-		
-	: ($platform=Mac OS:K25:2)
-		$Main:=->[PARAMETERS:3]PrintSettingsMAC:2
-		
-	: ($platform=Windows:K25:3)
-		$Main:=->[PARAMETERS:3]PrintSettingsWIN:3
-		
-End case 
+If (Is macOS)
+	$Main:=->[PARAMETERS:3]PrintSettingsMAC:2
+Else 
+	$Main:=->[PARAMETERS:3]PrintSettingsWIN:3
+End if 
 
 $printSettings:=$Main->
 

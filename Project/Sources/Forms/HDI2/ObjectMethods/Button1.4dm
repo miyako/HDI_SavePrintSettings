@@ -1,25 +1,20 @@
-C_BLOB:C604($printSettings)
-C_LONGINT:C283($err)
-C_LONGINT:C283($platform)
-C_POINTER:C301($Main; $Sub)
+var $printSettings : Blob
+var $err : Integer
+var $Main; $Sub : Pointer
 
 $err:=Print settings to BLOB:C1433($printSettings)
 
-_O_PLATFORM PROPERTIES:C365($platform)
-
-Case of 
-		
-	: ($platform=Mac OS:K25:2)
-		
-		$Main:=->[PARAMETERS:3]PrintSettingsMAC:2
-		$Sub:=->[PARAMETERS:3]PrintSettingsWIN:3
-		
-	: ($platform=Windows:K25:3)
-		
-		$Main:=->[PARAMETERS:3]PrintSettingsWIN:3
-		$Sub:=->[PARAMETERS:3]PrintSettingsMAC:2
-		
-End case 
+If (Is macOS)
+	
+	$Main:=->[PARAMETERS:3]PrintSettingsMAC:2
+	$Sub:=->[PARAMETERS:3]PrintSettingsWIN:3
+	
+Else 
+	
+	$Main:=->[PARAMETERS:3]PrintSettingsWIN:3
+	$Sub:=->[PARAMETERS:3]PrintSettingsMAC:2
+	
+End if 
 
 // the main parameters, matching the current platform are memorized (created OR replaced)
 

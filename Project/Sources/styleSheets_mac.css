@@ -1,8 +1,3 @@
-.Buttons_13 {
-	font-family: Lucida Grande;
-	font-size: 13px;
-}
-
 .default {
 	font-family: Lucida Grande;
 	font-size: 13px;
@@ -14,3 +9,15 @@
 	font-weight: bold;
 }
 
+/* macOS Tahoe Liquid Glass button sizing */
+@media (form-theme: liquid-glass) {
+	button.default {
+		height: 27px;
+	}
+}
+
+@media (form-theme: mac-classic) {
+	button.default {
+		height: 23px;
+	}
+}

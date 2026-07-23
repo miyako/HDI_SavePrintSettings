@@ -1,41 +1,35 @@
 //%attributes = {}
-SET MENU BAR:C67(1)
+#DECLARE($params : Object)
 
-C_TEXT:C284($1)
-C_LONGINT:C283($window)
+var $splashWindowTitle : Text
+$splashWindowTitle:=""
 
-Case of 
-	: (Count parameters:C259=0)
-		
-		CALL WORKER:C1389("HDI"; Current method name:C684; "Title")
-		
-	Else 
-		
-		Case of 
-			: ($1="Title")
-				
-				$window:=Open form window:C675("HDI"; \
-					Plain form window:K39:10; \
-					Horizontally centered:K39:1; Vertically centered:K39:4)
-				
-				DIALOG:C40("HDI")
-				
-				If (OK=1)
-					CALL WORKER:C1389("HDI"; Current method name:C684; "HDI")
-				End if 
-				
-				CLOSE WINDOW:C154($window)
-				
-			: ($1="HDI")
-				
-				$window:=Open form window:C675("HDI2"; \
-					Plain form window:K39:10; \
-					Horizontally centered:K39:1; Vertically centered:K39:4)
-				
-				DIALOG:C40("HDI2")
-				CLOSE WINDOW:C154($window)
-				KILL WORKER:C1390(Current process name:C1392)
-				
-		End case 
-		
-End case 
+var $window : Integer
+
+If (Count parameters=0)
+	
+	ARRAY LONGINT($windows; 0)
+	WINDOW LIST($windows)
+	
+	var $i : Integer
+	For ($i; 1; Size of array($windows))
+		$window:=$windows{$i}
+		If (Window process($window)=1) && (Get window title($window)=$splashWindowTitle)
+			var $x; $y; $bottom; $right : Integer
+			GET WINDOW RECT($x; $y; $bottom; $right; $window)
+			CALL FORM($window; Formula(SET WINDOW RECT($x; $y; $bottom; $right; $window)))
+			return 
+		End if 
+	End for 
+	
+	CALL WORKER(1; Current method name; {})
+	
+Else 
+	
+	SET MENU BAR(1)
+	
+	$window:=Open form window("HDI"; Plain form window; Horizontally centered; Vertically centered)
+	SET WINDOW TITLE($splashWindowTitle; $window)
+	DIALOG("HDI"; $params; *)
+	
+End if 

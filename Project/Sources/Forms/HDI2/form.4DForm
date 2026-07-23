@@ -29,8 +29,7 @@
 					"left": 20,
 					"width": 720,
 					"height": 480,
-					"fill": "#E6E6E6",
-					"stroke": "#CCCCCC",
+					"class": "panel",
 					"borderRadius": 5
 				},
 				"Picture3": {
@@ -51,8 +50,8 @@
 					"top": 210,
 					"left": 540,
 					"width": 180,
-					"height": 22,
 					"text": ":xliff:Print Settings",
+					"class": "default",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
@@ -64,8 +63,8 @@
 					"top": 270,
 					"left": 540,
 					"width": 180,
-					"height": 22,
 					"text": ":xliff:Save Print Settings",
+					"class": "default",
 					"focusable": false,
 					"method": "ObjectMethods/Button1.4dm",
 					"events": [
@@ -77,8 +76,8 @@
 					"top": 330,
 					"left": 540,
 					"width": 180,
-					"height": 22,
 					"text": ":xliff:Change Print Settings",
+					"class": "default",
 					"focusable": false,
 					"method": "ObjectMethods/Button4.4dm",
 					"events": [
@@ -90,8 +89,8 @@
 					"top": 390,
 					"left": 540,
 					"width": 180,
-					"height": 22,
 					"text": ":xliff:Reload Print Settings",
+					"class": "default",
 					"focusable": false,
 					"method": "ObjectMethods/Button5.4dm",
 					"events": [
@@ -103,8 +102,8 @@
 					"top": 452,
 					"left": 540,
 					"width": 180,
-					"height": 22,
 					"text": ":xliff:Verify Print Settings",
+					"class": "default",
 					"focusable": false,
 					"method": "ObjectMethods/Button6.4dm",
 					"events": [
@@ -116,13 +115,12 @@
 					"top": 520,
 					"left": 550,
 					"width": 110,
-					"height": 22,
 					"sizingX": "move",
 					"sizingY": "move",
 					"action": "cancel",
 					"shortcutKey": "[Esc]",
 					"text": ":xliff:Cancel",
-					"class": "Buttons_13",
+					"class": "default",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -133,13 +131,12 @@
 					"top": 520,
 					"left": 670,
 					"width": 70,
-					"height": 20,
 					"sizingX": "move",
 					"sizingY": "move",
 					"action": "accept",
 					"shortcutKey": "[Enter]",
 					"text": ":xliff:OK",
-					"class": "Buttons_13",
+					"class": "default",
 					"focusable": false,
 					"defaultButton": true,
 					"events": [
@@ -152,6 +149,7 @@
 					"left": 78,
 					"width": 407,
 					"height": 43,
+					"stroke": "automatic",
 					"text": ":xliff:#1: First call the print settings"
 				},
 				"Text3": {
@@ -160,6 +158,7 @@
 					"left": 78,
 					"width": 407,
 					"height": 43,
+					"stroke": "automatic",
 					"text": ":xliff:#2: Save those settings. All the options you have modified shall be memorized and saved in a BLOB."
 				},
 				"Text4": {
@@ -168,6 +167,7 @@
 					"left": 78,
 					"width": 407,
 					"height": 43,
+					"stroke": "automatic",
 					"text": ":xliff:#3: Modify the print settings again"
 				},
 				"Text5": {
@@ -176,6 +176,7 @@
 					"left": 78,
 					"width": 407,
 					"height": 43,
+					"stroke": "automatic",
 					"text": ":xliff:#4: Reload the saved settings from the BLOB saved in step #2."
 				},
 				"Text6": {
@@ -184,6 +185,7 @@
 					"left": 78,
 					"width": 407,
 					"height": 43,
+					"stroke": "automatic",
 					"text": ":xliff:#5: Call the settings again and verify they are the same as set in step #1 and saved in step #2."
 				},
 				"Text1": {
@@ -193,6 +195,7 @@
 					"width": 640,
 					"height": 128,
 					"class": "HDI",
+					"stroke": "automatic",
 					"textAlign": "center",
 					"text": ":xliff:Two new commands"
 				}
