@@ -48,9 +48,9 @@ Read `Button1.4dm` and `Button5.4dm` together -- they are the save/restore core;
 
 Converted from the 4D v16 binary `.4DB` to the `.4DProject` architecture. The branch below carries the modernisation work.
 
-| Branch | Description | Instructions |
-|--------|-------------|--------------|
-| [`miyako-hdi-migration-tasks`](../../tree/miyako-hdi-migration-tasks) | Full HDI modernisation (XLIFF, declarations, menu, method visibility, startup, dark mode CSS) | [localisation.instructions.md](.github/instructions/localisation.instructions.md), [variable.declarations.instructions.md](.github/instructions/variable.declarations.instructions.md), [menu.instructions.md](.github/instructions/menu.instructions.md), [method.visibility.instructions.md](.github/instructions/method.visibility.instructions.md), [startup.instructions.md](.github/instructions/startup.instructions.md), [css.instructions.md](.github/instructions/css.instructions.md), [tahoe.css.instructions.md](.github/instructions/tahoe.css.instructions.md) |
+| Branch | Description | Guidance |
+|--------|-------------|----------|
+| [`miyako-hdi-migration-tasks`](../../tree/miyako-hdi-migration-tasks) | Full HDI modernisation (XLIFF, declarations, menu, method visibility, startup, dark mode CSS) | [`4dlocalise`](https://github.com/miyako/skills/tree/main/4d-skills/skills/4dlocalise), [`4dmodernise`](https://github.com/miyako/skills/tree/main/4d-skills/skills/4dmodernise), [`4dproject`](https://github.com/miyako/skills/tree/main/4d-skills/skills/4dproject), [`4dmethods`](https://github.com/miyako/skills/tree/main/4d-skills/skills/4dmethods), [`4dstartup`](https://github.com/miyako/skills/tree/main/4d-skills/skills/4dstartup), [hdi.startup.instructions.md](.github/instructions/hdi.startup.instructions.md), [`4dcss`](https://github.com/miyako/skills/tree/main/4d-skills/skills/4dcss) |
 
 ## References
 
